@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HAPPY BIRTHDAY!!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Modal Styles */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 60%;
+                text-align: center;
+            }
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .modal-button {
+				background-color: #333;
+                display: block;
+                margin: 0 auto;
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+            .proceed-button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            .proceed-button:hover {
+                background-color: #555;
+            }
+            .full-screen-section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body class="homepage is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <div id="header">
+                <div class="inner">
+                    <header>
+                        <h1 id="logo">Belated Happy Birthday Mam!</h1>
+                        <hr />
+                        <p>Eto lang nakayanan XD</p>
+                    </header>
+                    <footer>
+                        <a href="#Letter" class="button circled scrolly">PROCEED</a>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- Full-screen section with button -->
+            <section id="Letter" class="full-screen-section">
+                <button class="modal-button" id="openModalButton">CLICK ME!!</button>
+            </section>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModalButton">&times;</span>
+                    <h2>Dear Madam Vera,</h2>
+                    <p style="color: #333;">
+                        Dear Mam/Madam/Ate Vera,
+
+Belated Happy Birthday te Vera! (nalimutan ko Nov. 4 pala kala ko 5 XD), Arigathanks sa lahat ng support, advice, at iba pa at nawa'y magpatuloy pa ang inyong pagmamalasakit sa ibang tao. Your kindness, laughter, and heart of gold are true gifts that we are so grateful for.
+
+I pray that God continues to bless you, guide you, protect you, and fill your path with peace, joy, and countless blessings. Remember that you are cherished, and loved, God's presence is always with you.
+
+Eto lamang ang aking nakayanan, babawi nalang ako pag may work na HAHAHAH (after 1 or 2 years XD)
+
+<br><br><br>
+Yun lamang po at salamat po sa paglaan ng oras ehe~ 
+<br>
+-JubanPuge
+                    </p>
+                    <a href="flower.html" class="proceed-button">Wait, Meron pa XD</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            // JavaScript for modal functionality
+            var modal = document.getElementById("myModal");
+            var openBtn = document.getElementById("openModalButton");
+            var closeBtn = document.getElementById("closeModalButton");
+
+            openBtn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
